@@ -1,4 +1,7 @@
-# strict-cast
+# strict-cast [![Travis Build Status][travis-img]][travis]
+
+[travis-img]: https://travis-ci.org/TrySound/strict-cast.svg
+[travis]: https://travis-ci.org/TrySound/strict-cast
 
 Strict type convertion for javascript. Inspired by [reason string convertion functions](https://reasonml.github.io/api/Pervasives.html#6_Stringconversionfunctions)
 
