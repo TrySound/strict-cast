@@ -9,7 +9,7 @@ ruleTester.run("strict-cast", plugin.rules["strict-cast"], {
       code: `Number(value)`,
       errors: [
         {
-          message: `Number() is not allowed. Use one of strict-cast functions.`
+          message: `Number() is not allowed. Use float_of_string instead.`
         }
       ]
     },
@@ -18,7 +18,7 @@ ruleTester.run("strict-cast", plugin.rules["strict-cast"], {
       code: `Boolean(value)`,
       errors: [
         {
-          message: `Boolean() is not allowed. Use one of strict-cast functions.`
+          message: `Boolean() is not allowed. Compare with falsy values instead.`
         }
       ]
     },
@@ -27,7 +27,9 @@ ruleTester.run("strict-cast", plugin.rules["strict-cast"], {
       code: `String(value)`,
       errors: [
         {
-          message: `String() is not allowed. Use one of strict-cast functions.`
+          message:
+            `String() is not allowed.` +
+            ` Use string_of_bool or string_of_float instead.`
         }
       ]
     }
