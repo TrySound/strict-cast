@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-strict-cast",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Eslint plugin to forbid unsafe type conversions",
   "main": "index.js",
   "repository": "https://github.com/TrySound/strict-cast",
