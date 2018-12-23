@@ -1,7 +1,7 @@
 {
   "name": "strict-cast",
   "version": "0.1.0",
-  "description": "\"Strict type convertion utilities for javascript\"",
+  "description": "\"Strict type conversion utilities for javascript\"",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "scripts": {
