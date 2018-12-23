@@ -1,0 +1,21 @@
+{
+  "name": "strict-cast",
+  "version": "0.1.0",
+  "description": "\"Strict type convertion utilities for javascript\"",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "build:cjs": "NODE_ENV=cjs babel src/index.js --out-file dist/index.cjs.js",
+    "build:esm": "babel src/index.js --out-file dist/index.esm.js",
+    "build:flow": "echo \"// @flow\n\nexport * from '../src';\" > dist/index.cjs.js.flow",
+    "prepublish": "make-dir dist && yarn build:cjs && yarn build:esm && yarn build:flow"
+  },
+  "repository": "https://github.com/TrySound/strict-cast",
+  "author": "Bogdan Chadkin",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "make-dir-cli": "^1.0.0"
+  }
+}

@@ -1,5 +1,5 @@
 const { RuleTester } = require("eslint");
-const plugin = require("./eslint-plugin.js");
+const plugin = require("./index.js");
 
 const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 8 } });
 

@@ -36,13 +36,19 @@ let float_of_string: string => float;
 
 Convert the given string to a float. Raise `Failure "float_of_string"` if the given string is not a valid representation of a float.
 
-## eslint-plugin
+## eslint plugin
+
+The plugin is used to forbid the usage of unsafe `Number`, `Boolean` and `String` type conversions.
+
+```
+yarn add eslint-plugin-strict-cast --dev
+```
 
 ```js
 module.exports = {
-  plugins: ["strict-cast/eslint-plugin"],
+  plugins: ["strict-cast"],
   rules: {
-    "strict-cast/eslint-plugin/strict-cast": "error"
+    "strict-cast/strict-cast": "error"
   }
 };
 ```

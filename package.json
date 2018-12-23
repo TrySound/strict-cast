@@ -1,28 +1,19 @@
 {
-  "name": "strict-cast",
-  "version": "0.1.0",
-  "description": "Strict type convertion for javascript",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "private": true,
+  "workspaces": [
+    "strict-cast",
+    "eslint-plugin-strict-cast"
+  ],
   "scripts": {
-    "build:cjs": "NODE_ENV=cjs babel src/index.js --out-file dist/index.cjs.js",
-    "build:esm": "babel src/index.js --out-file dist/index.esm.js",
-    "prepublish": "make-dir dist && yarn build:cjs && yarn build:esm"
+    "test": "yarn flow check && yarn jest"
   },
-  "repository": "https://github.com/TrySound/strict-cast",
-  "author": "Bogdan Chadkin",
-  "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-flow": "^7.0.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.6.0",
-    "eslint": "^5.10.0",
+    "babel-jest": "^24.0.0-alpha.9",
     "flow-bin": "^0.89.0",
-    "jest": "^23.6.0",
-    "make-dir-cli": "^1.0.0",
+    "jest": "^24.0.0-alpha.9",
     "prettier": "^1.15.3"
   }
 }

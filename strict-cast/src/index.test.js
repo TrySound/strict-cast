@@ -5,7 +5,7 @@ import {
   bool_of_string,
   string_of_float,
   float_of_string
-} from "./src/index.js";
+} from "./index.js";
 
 declare var test: any;
 declare var expect: any;
